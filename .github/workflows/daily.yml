@@ -11,8 +11,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm ci || true
-      - run: npm run gen
+      - run: node scripts/generate-post.js
       - name: Commit and push
         run: |
           git config user.name 'github-actions'
