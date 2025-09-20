@@ -3,15 +3,34 @@ on:
   schedule:
     - cron: '0 9,13,17,21 * * *'   # 4x per dag (UTC)
   workflow_dispatch:
+
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: node scripts/generate-post.js
+
+      - name: Debug env
+        run: |
+          node -v
+          git --version
+          pwd
+          ls -la
+          ls -la scripts || true
+          ls -la docs || true
+          head -n 30 scripts/generate-post.js || true
+
+      - name: Generate post
+        run: node scripts/generate-post.js
+
       - name: Commit and push
         run: |
           git config user.name 'github-actions'
