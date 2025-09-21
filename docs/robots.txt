@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: https://bigfundz8.github.io/crypto-tools-guides/sitemap.xml
+
+

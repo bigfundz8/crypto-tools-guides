@@ -17,12 +17,14 @@ const filename = `${date}-${slugify(pick.title)}.md`;
 const outDir = path.join('docs','posts');
 fs.mkdirSync(outDir, { recursive: true });
 
-const affiliate = {
+function readJSON(file, fb){ try { return JSON.parse(fs.readFileSync(file,'utf-8')); } catch { return fb; } }
+const affiliates = readJSON('affiliates.json', {
   ledger: 'https://www.ledger.com/?ref=YOUR_REF',
   trezor: 'https://trezor.io/?offer_id=YOUR_REF',
   bybit:  'https://partner.bybit.com/b/YOUR_REF',
   koinly: 'https://koinly.io/?via=YOUR_REF',
-};
+  siteBase: 'https://bigfundz8.github.io/crypto-tools-guides'
+});
 
 const md = `---
 layout: default
@@ -44,10 +46,10 @@ date: ${date}
 3. Do Z
 
 ## Recommended tools
-- Ledger: ${affiliate.ledger}
-- Trezor: ${affiliate.trezor}
-- Bybit: ${affiliate.bybit}
-- Koinly: ${affiliate.koinly}
+- Ledger: ${affiliates.ledger}
+- Trezor: ${affiliates.trezor}
+- Bybit: ${affiliates.bybit}
+- Koinly: ${affiliates.koinly}
 
 *Disclosure: affiliate links help keep this site free.*
 `;
@@ -55,3 +57,31 @@ date: ${date}
 const outPath = path.join(outDir, filename);
 fs.writeFileSync(outPath, md);
 console.log('Written', outPath);
+
+// Update sitemap and RSS for SEO
+function listPosts(){
+  const dir = path.join('docs','posts');
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir)
+    .filter(f=>f.endsWith('.md'))
+    .map(f=>({f, t: fs.statSync(path.join(dir,f)).mtimeMs}))
+    .sort((a,b)=>b.t-a.t)
+    .map(x=>x.f);
+}
+
+function updateSitemap(){
+  const base = affiliates.siteBase || '';
+  const urls = ['/', ...listPosts().map(f=>`/posts/${f}`)];
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u=>`  <url><loc>${base}${u}</loc></url>`).join('\n')}\n</urlset>\n`;
+  fs.writeFileSync(path.join('docs','sitemap.xml'), xml);
+}
+
+function updateRSS(){
+  const base = affiliates.siteBase || '';
+  const items = listPosts().slice(0,30).map(f=>`    <item>\n      <title>${f.replace(/^[0-9-]+-/,'').replace(/\.md$/,'')}</title>\n      <link>${base}/posts/${f}</link>\n      <guid>${base}/posts/${f}</guid>\n    </item>`).join('\n');
+  const rss = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>\n  <title>Crypto Tools & Guides</title>\n  <link>${base}</link>\n  <description>Auto-generated guides</description>\n${items}\n</channel></rss>\n`;
+  fs.writeFileSync(path.join('docs','feed.xml'), rss);
+}
+
+updateSitemap();
+updateRSS();
