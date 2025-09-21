@@ -52,6 +52,10 @@ date: ${date}
 - Koinly: ${affiliates.koinly}
 
 *Disclosure: affiliate links help keep this site free.*
+
+---
+
+[Home]({{ site.baseurl }}/) · [RSS]({{ site.baseurl }}/feed.xml) · [Disclosure]({{ site.baseurl }}/disclosure) · [Privacy]({{ site.baseurl }}/privacy)
 `;
 
 const outPath = path.join(outDir, filename);
