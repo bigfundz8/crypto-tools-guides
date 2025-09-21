@@ -12,7 +12,7 @@ Daily auto-generated guides about wallets, DEXs, security and tax tools.
 {% assign sorted = pages_list | sort: 'date' | reverse %}
 {% if sorted.size > 0 %}
 {% for p in sorted limit:20 %}
-- [{{ p.title | default: p.url }}]({{ p.url }})
+- [{{ p.title | default: p.url }}]({{ site.baseurl }}{{ p.url }})
 {% endfor %}
 {% else %}
 - Coming soon... (auto-publishing enabled)

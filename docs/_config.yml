@@ -5,3 +5,5 @@ plugins:
 markdown: kramdown
 kramdown:
   input: GFM
+url: https://bigfundz8.github.io
+baseurl: /crypto-tools-guides
