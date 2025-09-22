@@ -11,9 +11,21 @@ Daily auto-generated guides about wallets, DEXs, security and tax tools.
 {% assign pages_list = site.pages | where_exp: "p", "p.path contains 'posts/'" %}
 {% assign sorted = pages_list | sort: 'date' | reverse %}
 {% if sorted.size > 0 %}
-{% for p in sorted limit:20 %}
-- [{{ p.title | default: p.url }}]({{ site.baseurl }}{{ p.url }})
+<div class="grid">
+{% for p in sorted limit:12 %}
+  <div class="card">
+    <h3><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></h3>
+    <div class="meta">{{ p.date | date: "%Y-%m-%d" }}<span class="badge">{{ p.category | default: 'Guide' }}</span></div>
+    <p class="meta">Short, practical how‑to for beginners.</p>
+  </div>
 {% endfor %}
+</div>
 {% else %}
-- Coming soon... (auto-publishing enabled)
+<p>- Coming soon... (auto-publishing enabled)</p>
 {% endif %}
+
+<div class="cta">
+  Prefer a hardware wallet? Start with Ledger or Trezor:
+  <br />
+  <a href="{{ site.data.affiliates.ledger }}">Ledger</a> · <a href="{{ site.data.affiliates.trezor }}">Trezor</a> · <a href="{{ site.data.affiliates.koinly }}">Koinly</a>
+</div>
