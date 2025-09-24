@@ -33,6 +33,8 @@ category: ${pick.cat}
 date: ${date}
 ---
 
+{% include adsense-top.html %}
+
 > Fast, practical guide in plain English.
 
 ## What you will learn
@@ -54,6 +56,8 @@ date: ${date}
 *Disclosure: affiliate links help keep this site free.*
 
 {% include post-cta.html %}
+
+{% include adsense-bottom.html %}
 
 ---
 

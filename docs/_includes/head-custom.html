@@ -35,3 +35,7 @@
 </script>
 {% endif %}
 
+{% if site.data.adsense.publisherId and site.data.adsense.publisherId != '' %}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.data.adsense.publisherId }}" crossorigin="anonymous"></script>
+{% endif %}
+
