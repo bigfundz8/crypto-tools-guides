@@ -19,6 +19,12 @@
   gtag('js', new Date());
   gtag('config', '{{ site.data.analytics.ga4MeasurementId }}', { debug_mode: true });
   gtag('event', 'page_view');
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[data-aff]');
+    if(!a) return;
+    var brand = a.getAttribute('data-aff');
+    gtag('event', 'affiliate_click', { brand: brand, link_url: a.href });
+  });
 </script>
 {% endif %}
 
