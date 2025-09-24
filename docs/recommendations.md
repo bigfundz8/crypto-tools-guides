@@ -11,20 +11,20 @@ These are the tools we recommend for beginners. Using these links supports the s
 
 | Tool | Why | Link |
 |---|---|---|
-| Ledger | Popular, broad coin support | [Get Ledger]({{ site.data.affiliates.ledger }}) |
-| Trezor Safe 5 | Open‑source, simple UX | [Get Trezor]({{ site.data.affiliates.trezor }}) |
+| Ledger | Popular, broad coin support | <a data-aff="ledger" href="{{ site.data.affiliates.ledger }}">Get Ledger</a> |
+| Trezor Safe 5 | Open‑source, simple UX | <a data-aff="trezor" href="{{ site.data.affiliates.trezor }}">Get Trezor</a> |
 
 ## Taxes
 
 | Tool | Why | Link |
 |---|---|---|
-| Koinly | Easy CSV imports | [Try Koinly]({{ site.data.affiliates.koinly }}) |
+| Koinly | Easy CSV imports | <a data-aff="koinly" href="{{ site.data.affiliates.koinly }}">Try Koinly</a> |
 
 ## Exchanges (starter)
 
 | Tool | Why | Link |
 |---|---|---|
-| Bybit | Liquidity + promos | [Open account]({{ site.data.affiliates.bybit }}) |
+| Bybit | Liquidity + promos | <a data-aff="bybit" href="{{ site.data.affiliates.bybit }}">Open account</a> |
 
 ---
 
