@@ -16,7 +16,11 @@ Praktische, dagelijks gegenereerde crypto‑guides met tools en veilige stappen.
   <div class="card">
     <h3><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></h3>
     <div class="meta">{{ p.date | date: "%Y-%m-%d" }}<span class="badge">{{ p.category | default: 'Guide' }}</span></div>
+    {% if p.summary %}
+    <p>{{ p.summary }}</p>
+    {% else %}
     <p class="meta">Short, practical how‑to for beginners.</p>
+    {% endif %}
   </div>
 {% endfor %}
 </div>

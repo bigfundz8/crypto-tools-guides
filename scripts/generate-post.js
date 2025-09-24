@@ -26,32 +26,42 @@ const affiliates = readJSON('affiliates.json', {
   siteBase: 'https://bigfundz8.github.io/crypto-tools-guides'
 });
 
+const summary = `A clear, beginner‑friendly ${pick.cat.toLowerCase()} guide: what to do, avoid, and which tools to use.`;
+
 const md = `---
 layout: default
 title: ${pick.title}
 category: ${pick.cat}
 date: ${date}
+summary: ${summary}
 ---
 
 {% include adsense-top.html %}
 
-> Fast, practical guide in plain English.
+> Practical, step‑by‑step guidance. Short, neutral, no hype.
 
 ## What you will learn
-- Key steps
-- Common mistakes
-- Tools to use
+- How to approach this safely and efficiently
+- Common pitfalls and how to avoid them
+- Which tools speed things up
 
-## Steps
-1. Do X
-2. Do Y
-3. Do Z
+## Step‑by‑step
+1. Define your goal. Write down what you want to achieve and constraints (time, budget, risk tolerance).
+2. Prepare the right tools. Create backups, update software/firmware, and enable 2FA on all accounts.
+3. Execute in small chunks. Test with small amounts first, verify results, then scale gradually.
+4. Document your changes. Keep a simple log so you can trace mistakes and repeat successes.
+
+## Do’s and don’ts
+- Use unique passwords and a password manager
+- Keep seed phrases offline and never photograph them
+- Always verify URLs, extensions and contract addresses
+- Avoid public Wi‑Fi when handling funds
 
 ## Recommended tools
-- Ledger: ${affiliates.ledger}
-- Trezor: ${affiliates.trezor}
-- Bybit: ${affiliates.bybit}
-- Koinly: ${affiliates.koinly}
+- <a data-aff="ledger" href="${affiliates.ledger}">Ledger</a> — hardware wallet for long‑term safety
+- <a data-aff="trezor" href="${affiliates.trezor}">Trezor</a> — open‑source, simple UX
+- <a data-aff="bybit" href="${affiliates.bybit}">Bybit</a> — liquidity + promos (for trading only if you understand risks)
+- <a data-aff="koinly" href="${affiliates.koinly}">Koinly</a> — fast portfolio/tax tracking
 
 *Disclosure: affiliate links help keep this site free.*
 
