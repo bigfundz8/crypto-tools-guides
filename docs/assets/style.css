@@ -11,4 +11,6 @@ a:hover{text-decoration:underline}
 .meta{color:var(--muted);font-size:12px;margin-top:8px}
 .cta{margin-top:24px;background:#0e1a2e;border:1px solid #20314f;border-radius:12px;padding:16px}
 .cta a{font-weight:bold}
+.cta-button{display:inline-block;background:#3fb950;color:#0b1220;padding:8px 12px;border-radius:6px;text-decoration:none}
+.cta-button:hover{filter:brightness(1.05)}
 

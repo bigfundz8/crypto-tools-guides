@@ -10,4 +10,11 @@
     <a href="{{ site.baseurl }}/feed.xml" style="color:#e6edf3">RSS</a>
   </nav>
 </header>
+<div id="sticky-cta" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#0e1a2e;border-top:1px solid #20314f;padding:10px 16px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+  <a data-aff="ledger" href="{{ site.data.affiliates.ledger }}" target="_blank" rel="nofollow noopener" class="cta-button">Ledger</a>
+  <a data-aff="trezor" href="{{ site.data.affiliates.trezor }}" target="_blank" rel="nofollow noopener" class="cta-button">Trezor</a>
+  <a data-aff="koinly" href="{{ site.data.affiliates.koinly }}" target="_blank" rel="nofollow noopener" class="cta-button">Koinly</a>
+  {% if site.data.affiliates.bybit contains 'bybit' %}<a data-aff="bybit" href="{{ site.data.affiliates.bybit }}" target="_blank" rel="nofollow noopener" class="cta-button">Bybit</a>{% endif %}
+  <a href="{{ site.baseurl }}/disclosure" class="cta-button" style="background:#20314f">Info</a>
+</div>
 
