@@ -27,9 +27,10 @@
     });
   });
   // Robuuste affiliate-tracking: voorkom race met navigatie op mobiel
-  document.addEventListener('click', function(e){
+  function handleAffiliateInteraction(e){
     var a = e.target.closest('a[data-aff]');
     if(!a) return;
+    if(a.__affSent) return; // voorkom dubbel vuur
     var brand = a.getAttribute('data-aff');
     var href = a.href;
     // voorkom dat navigatie het event annuleert
@@ -48,10 +49,14 @@
       });
       // fallback als callback niet vuurt
       setTimeout(go, 600);
+      a.__affSent = true;
+      setTimeout(function(){ a.__affSent = false; }, 2000);
     } catch(_) {
       go();
     }
-  });
+  }
+  document.addEventListener('click', handleAffiliateInteraction, { capture: true });
+  document.addEventListener('pointerdown', handleAffiliateInteraction, { capture: true });
 </script>
 {% endif %}
 
