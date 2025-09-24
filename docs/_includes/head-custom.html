@@ -26,11 +26,31 @@
       a.setAttribute('rel','nofollow noopener noreferrer');
     });
   });
+  // Robuuste affiliate-tracking: voorkom race met navigatie op mobiel
   document.addEventListener('click', function(e){
     var a = e.target.closest('a[data-aff]');
     if(!a) return;
     var brand = a.getAttribute('data-aff');
-    gtag('event', 'affiliate_click', { brand: brand, link_url: a.href });
+    var href = a.href;
+    // voorkom dat navigatie het event annuleert
+    e.preventDefault();
+    var didNavigate = false;
+    var go = function(){
+      if(didNavigate) return; didNavigate = true;
+      try { window.open(href, '_blank', 'noopener'); } catch(_) { window.location.href = href; }
+    };
+    try {
+      gtag('event', 'affiliate_click', {
+        affiliate_brand: brand,
+        affiliate_link: href,
+        transport_type: 'beacon',
+        event_callback: go
+      });
+      // fallback als callback niet vuurt
+      setTimeout(go, 600);
+    } catch(_) {
+      go();
+    }
   });
 </script>
 {% endif %}
