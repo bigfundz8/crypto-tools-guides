@@ -7,3 +7,16 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css" />
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}/feed.xml" />
 
+{% if site.data.analytics.gscVerification and site.data.analytics.gscVerification != '' %}
+<meta name="google-site-verification" content="{{ site.data.analytics.gscVerification }}" />
+{% endif %}
+
+{% if site.data.analytics.ga4MeasurementId and site.data.analytics.ga4MeasurementId != '' %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.data.analytics.ga4MeasurementId }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+  gtag('config', '{{ site.data.analytics.ga4MeasurementId }}');
+}</script>
+{% endif %}
+

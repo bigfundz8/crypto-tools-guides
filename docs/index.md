@@ -1,10 +1,10 @@
 # Crypto Tools & Guides
 
-Daily auto-generated guides about wallets, DEXs, security and tax tools.
+Praktische, dagelijks gegenereerde crypto‑guides met tools en veilige stappen. Monetisatie via affiliate‑aanbevelingen en later advertenties.
 
-- Fresh posts every day
-- Neutral, beginner-friendly
-- Includes affiliate links (you support the site at no extra cost)
+<div class="cta">
+  Start hier: <a href="{{ site.data.affiliates.ledger }}">Ledger</a> · <a href="{{ site.data.affiliates.trezor }}">Trezor</a> · <a href="{{ site.data.affiliates.koinly }}">Koinly</a>{% if site.data.affiliates.bybit contains 'bybit' %} · <a href="{{ site.data.affiliates.bybit }}">Bybit</a>{% endif %}
+</div>
 
 ## Latest posts
 

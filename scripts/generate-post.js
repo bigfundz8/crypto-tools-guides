@@ -53,6 +53,8 @@ date: ${date}
 
 *Disclosure: affiliate links help keep this site free.*
 
+{% include post-cta.html %}
+
 ---
 
 [Home]({{ site.baseurl }}/) · [RSS]({{ site.baseurl }}/feed.xml) · [Disclosure]({{ site.baseurl }}/disclosure) · [Privacy]({{ site.baseurl }}/privacy)
