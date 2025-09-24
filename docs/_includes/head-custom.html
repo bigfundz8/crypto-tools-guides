@@ -19,6 +19,13 @@
   gtag('js', new Date());
   gtag('config', '{{ site.data.analytics.ga4MeasurementId }}', { debug_mode: true });
   gtag('event', 'page_view');
+  document.addEventListener('DOMContentLoaded', function(){
+    var links = document.querySelectorAll('a[data-aff]');
+    links.forEach(function(a){
+      a.setAttribute('target','_blank');
+      a.setAttribute('rel','nofollow noopener noreferrer');
+    });
+  });
   document.addEventListener('click', function(e){
     var a = e.target.closest('a[data-aff]');
     if(!a) return;
