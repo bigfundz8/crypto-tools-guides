@@ -10,3 +10,5 @@ baseurl:
 include:
   - _includes/head.html
   - _includes/head-custom.html
+  - _includes/header.html
+  - _includes/footer.html

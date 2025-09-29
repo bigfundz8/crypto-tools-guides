@@ -1,3 +1,5 @@
+{% include header.html %}
+
 # Crypto Tools & Guides
 
 Praktische, dagelijks gegenereerde crypto‑guides met tools en veilige stappen. Monetisatie via affiliate‑aanbevelingen en later advertenties.
@@ -5,6 +7,8 @@ Praktische, dagelijks gegenereerde crypto‑guides met tools en veilige stappen.
 <div class="cta">
   Start hier: <a data-aff="ledger" href="{{ site.data.affiliates.ledger }}">Ledger</a> · <a data-aff="trezor" href="{{ site.data.affiliates.trezor }}">Trezor</a> · <a data-aff="koinly" href="{{ site.data.affiliates.koinly }}">Koinly</a>{% if site.data.affiliates.bybit contains 'bybit' %} · <a data-aff="bybit" href="{{ site.data.affiliates.bybit }}">Bybit</a>{% endif %}
 </div>
+
+{% include footer.html %}
 
 ## Latest posts
 
