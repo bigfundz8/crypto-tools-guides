@@ -4,24 +4,54 @@
   <link>https://cryptotoolsguide.com</link>
   <description>Auto-generated guides</description>
     <item>
-      <title>liquidity-providing-101-fees-impermanent-loss-and-tips</title>
-      <link>https://cryptotoolsguide.com/posts/2025-09-24-liquidity-providing-101-fees-impermanent-loss-and-tips.md</link>
-      <guid>https://cryptotoolsguide.com/posts/2025-09-24-liquidity-providing-101-fees-impermanent-loss-and-tips.md</guid>
+      <title>tracking-your-crypto-taxes-the-simple-way</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-20-tracking-your-crypto-taxes-the-simple-way.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-20-tracking-your-crypto-taxes-the-simple-way.md</guid>
     </item>
     <item>
-      <title>track-every-trade-simple-workflow-for-crypto-taxes-koinly</title>
-      <link>https://cryptotoolsguide.com/posts/2025-09-24-track-every-trade-simple-workflow-for-crypto-taxes-koinly.md</link>
-      <guid>https://cryptotoolsguide.com/posts/2025-09-24-track-every-trade-simple-workflow-for-crypto-taxes-koinly.md</guid>
+      <title>welcome</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-20-welcome.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-20-welcome.md</guid>
     </item>
     <item>
-      <title>set-up-a-secure-hardware-wallet-ledger-trezor-step-by-step</title>
-      <link>https://cryptotoolsguide.com/posts/2025-09-24-set-up-a-secure-hardware-wallet-ledger-trezor-step-by-step.md</link>
-      <guid>https://cryptotoolsguide.com/posts/2025-09-24-set-up-a-secure-hardware-wallet-ledger-trezor-step-by-step.md</guid>
+      <title>best-practices-for-securing-your-crypto-wallet</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-21-best-practices-for-securing-your-crypto-wallet.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-21-best-practices-for-securing-your-crypto-wallet.md</guid>
     </item>
     <item>
-      <title>the-essential-crypto-security-checklist-for-beginners</title>
-      <link>https://cryptotoolsguide.com/posts/2025-09-24-the-essential-crypto-security-checklist-for-beginners.md</link>
-      <guid>https://cryptotoolsguide.com/posts/2025-09-24-the-essential-crypto-security-checklist-for-beginners.md</guid>
+      <title>tracking-your-crypto-taxes-the-simple-way</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-21-tracking-your-crypto-taxes-the-simple-way.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-21-tracking-your-crypto-taxes-the-simple-way.md</guid>
+    </item>
+    <item>
+      <title>best-practices-for-securing-your-crypto-wallet</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-22-best-practices-for-securing-your-crypto-wallet.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-22-best-practices-for-securing-your-crypto-wallet.md</guid>
+    </item>
+    <item>
+      <title>how-to-avoid-mev-and-slippage-on-dexs</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-22-how-to-avoid-mev-and-slippage-on-dexs.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-22-how-to-avoid-mev-and-slippage-on-dexs.md</guid>
+    </item>
+    <item>
+      <title>best-practices-for-securing-your-crypto-wallet</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-23-best-practices-for-securing-your-crypto-wallet.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-23-best-practices-for-securing-your-crypto-wallet.md</guid>
+    </item>
+    <item>
+      <title>crypto-security-checklist-for-beginners</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-23-crypto-security-checklist-for-beginners.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-23-crypto-security-checklist-for-beginners.md</guid>
+    </item>
+    <item>
+      <title>how-to-avoid-mev-and-slippage-on-dexs</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-23-how-to-avoid-mev-and-slippage-on-dexs.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-23-how-to-avoid-mev-and-slippage-on-dexs.md</guid>
+    </item>
+    <item>
+      <title>tracking-your-crypto-taxes-the-simple-way</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-23-tracking-your-crypto-taxes-the-simple-way.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-23-tracking-your-crypto-taxes-the-simple-way.md</guid>
     </item>
     <item>
       <title>crypto-security-checklist-for-beginners</title>
@@ -34,58 +64,48 @@
       <guid>https://cryptotoolsguide.com/posts/2025-09-24-how-to-avoid-mev-and-slippage-on-dexs.md</guid>
     </item>
     <item>
+      <title>liquidity-providing-101-fees-impermanent-loss-and-tips</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-24-liquidity-providing-101-fees-impermanent-loss-and-tips.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-24-liquidity-providing-101-fees-impermanent-loss-and-tips.md</guid>
+    </item>
+    <item>
+      <title>set-up-a-secure-hardware-wallet-ledger-trezor-step-by-step</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-24-set-up-a-secure-hardware-wallet-ledger-trezor-step-by-step.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-24-set-up-a-secure-hardware-wallet-ledger-trezor-step-by-step.md</guid>
+    </item>
+    <item>
+      <title>the-essential-crypto-security-checklist-for-beginners</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-24-the-essential-crypto-security-checklist-for-beginners.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-24-the-essential-crypto-security-checklist-for-beginners.md</guid>
+    </item>
+    <item>
+      <title>track-every-trade-simple-workflow-for-crypto-taxes-koinly</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-24-track-every-trade-simple-workflow-for-crypto-taxes-koinly.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-24-track-every-trade-simple-workflow-for-crypto-taxes-koinly.md</guid>
+    </item>
+    <item>
       <title>tracking-your-crypto-taxes-the-simple-way</title>
       <link>https://cryptotoolsguide.com/posts/2025-09-24-tracking-your-crypto-taxes-the-simple-way.md</link>
       <guid>https://cryptotoolsguide.com/posts/2025-09-24-tracking-your-crypto-taxes-the-simple-way.md</guid>
     </item>
     <item>
-      <title>tracking-your-crypto-taxes-the-simple-way</title>
-      <link>https://cryptotoolsguide.com/posts/2025-09-23-tracking-your-crypto-taxes-the-simple-way.md</link>
-      <guid>https://cryptotoolsguide.com/posts/2025-09-23-tracking-your-crypto-taxes-the-simple-way.md</guid>
+      <title>cost-basis-realized-vs-unrealized-crypto-tax-basics-explained</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-29-cost-basis-realized-vs-unrealized-crypto-tax-basics-explained.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-29-cost-basis-realized-vs-unrealized-crypto-tax-basics-explained.md</guid>
     </item>
     <item>
-      <title>how-to-avoid-mev-and-slippage-on-dexs</title>
-      <link>https://cryptotoolsguide.com/posts/2025-09-23-how-to-avoid-mev-and-slippage-on-dexs.md</link>
-      <guid>https://cryptotoolsguide.com/posts/2025-09-23-how-to-avoid-mev-and-slippage-on-dexs.md</guid>
+      <title>how-to-back-up-and-restore-your-seed-phrase-safely</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-29-how-to-back-up-and-restore-your-seed-phrase-safely.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-29-how-to-back-up-and-restore-your-seed-phrase-safely.md</guid>
     </item>
     <item>
-      <title>crypto-security-checklist-for-beginners</title>
-      <link>https://cryptotoolsguide.com/posts/2025-09-23-crypto-security-checklist-for-beginners.md</link>
-      <guid>https://cryptotoolsguide.com/posts/2025-09-23-crypto-security-checklist-for-beginners.md</guid>
+      <title>set-up-a-secure-hardware-wallet-ledger-trezor-step-by-step</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-29-set-up-a-secure-hardware-wallet-ledger-trezor-step-by-step.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-29-set-up-a-secure-hardware-wallet-ledger-trezor-step-by-step.md</guid>
     </item>
     <item>
-      <title>best-practices-for-securing-your-crypto-wallet</title>
-      <link>https://cryptotoolsguide.com/posts/2025-09-23-best-practices-for-securing-your-crypto-wallet.md</link>
-      <guid>https://cryptotoolsguide.com/posts/2025-09-23-best-practices-for-securing-your-crypto-wallet.md</guid>
-    </item>
-    <item>
-      <title>how-to-avoid-mev-and-slippage-on-dexs</title>
-      <link>https://cryptotoolsguide.com/posts/2025-09-22-how-to-avoid-mev-and-slippage-on-dexs.md</link>
-      <guid>https://cryptotoolsguide.com/posts/2025-09-22-how-to-avoid-mev-and-slippage-on-dexs.md</guid>
-    </item>
-    <item>
-      <title>best-practices-for-securing-your-crypto-wallet</title>
-      <link>https://cryptotoolsguide.com/posts/2025-09-22-best-practices-for-securing-your-crypto-wallet.md</link>
-      <guid>https://cryptotoolsguide.com/posts/2025-09-22-best-practices-for-securing-your-crypto-wallet.md</guid>
-    </item>
-    <item>
-      <title>tracking-your-crypto-taxes-the-simple-way</title>
-      <link>https://cryptotoolsguide.com/posts/2025-09-21-tracking-your-crypto-taxes-the-simple-way.md</link>
-      <guid>https://cryptotoolsguide.com/posts/2025-09-21-tracking-your-crypto-taxes-the-simple-way.md</guid>
-    </item>
-    <item>
-      <title>tracking-your-crypto-taxes-the-simple-way</title>
-      <link>https://cryptotoolsguide.com/posts/2025-09-20-tracking-your-crypto-taxes-the-simple-way.md</link>
-      <guid>https://cryptotoolsguide.com/posts/2025-09-20-tracking-your-crypto-taxes-the-simple-way.md</guid>
-    </item>
-    <item>
-      <title>best-practices-for-securing-your-crypto-wallet</title>
-      <link>https://cryptotoolsguide.com/posts/2025-09-21-best-practices-for-securing-your-crypto-wallet.md</link>
-      <guid>https://cryptotoolsguide.com/posts/2025-09-21-best-practices-for-securing-your-crypto-wallet.md</guid>
-    </item>
-    <item>
-      <title>welcome</title>
-      <link>https://cryptotoolsguide.com/posts/2025-09-20-welcome.md</link>
-      <guid>https://cryptotoolsguide.com/posts/2025-09-20-welcome.md</guid>
+      <title>track-every-trade-simple-workflow-for-crypto-taxes-koinly</title>
+      <link>https://cryptotoolsguide.com/posts/2025-09-29-track-every-trade-simple-workflow-for-crypto-taxes-koinly.md</link>
+      <guid>https://cryptotoolsguide.com/posts/2025-09-29-track-every-trade-simple-workflow-for-crypto-taxes-koinly.md</guid>
     </item>
 </channel></rss>
