@@ -4,6 +4,7 @@
 <h1>Crypto Tools & Guides</h1>
 <p>Praktische, dagelijks gegenereerde crypto‑guides met veilige stappen en duidelijke tools. Monetisatie via affiliate‑aanbevelingen en later advertenties.</p>
 </div>
+{% include trust.html %}
 
 ## Latest posts
 

@@ -5,26 +5,38 @@ title: Recommended Tools
 
 # Recommended Tools
 
-These are the tools we recommend for beginners. Using these links supports the site at no extra cost.
+Our curated picks to keep your crypto safe and your workflow simple. Using these links supports the site at no extra cost.
 
 ## Hardware wallets
 
-| Tool | Why | Link |
-|---|---|---|
-| Ledger | Popular, broad coin support | <a data-aff="ledger" href="{{ site.data.affiliates.ledger }}">Get Ledger</a> |
-| Trezor Safe 5 | Open‑source, simple UX | <a data-aff="trezor" href="{{ site.data.affiliates.trezor }}">Get Trezor</a> |
+<div class="grid">
+  <div class="card">
+    <h3>Ledger</h3>
+    <p class="meta">Popular · Broad coin support · Secure element</p>
+    <a class="cta-button" data-aff="ledger" href="{{ site.data.affiliates.ledger }}">Get Ledger</a>
+  </div>
+  <div class="card">
+    <h3>Trezor</h3>
+    <p class="meta">Open‑source · Clean UX · Great for beginners</p>
+    <a class="cta-button" data-aff="trezor" href="{{ site.data.affiliates.trezor }}">Get Trezor</a>
+  </div>
+</div>
 
 ## Taxes
 
-| Tool | Why | Link |
-|---|---|---|
-| Koinly | Easy CSV imports | <a data-aff="koinly" href="{{ site.data.affiliates.koinly }}">Try Koinly</a> |
+<div class="card">
+  <h3>Koinly</h3>
+  <p class="meta">Easy CSV/API imports · Clean reconciliation · Fast reports</p>
+  <a class="cta-button" data-aff="koinly" href="{{ site.data.affiliates.koinly }}">Try Koinly</a>
+  </div>
 
 ## Exchanges (starter)
 
-| Tool | Why | Link |
-|---|---|---|
-| Bybit | Liquidity + promos | <a data-aff="bybit" href="{{ site.data.affiliates.bybit }}">Open account</a> |
+<div class="card">
+  <h3>Bybit</h3>
+  <p class="meta">Liquidity · Promos · Advanced order types</p>
+  <a class="cta-button" data-aff="bybit" href="{{ site.data.affiliates.bybit }}">Open account</a>
+</div>
 
 ---
 

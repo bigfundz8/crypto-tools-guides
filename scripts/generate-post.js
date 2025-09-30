@@ -68,32 +68,51 @@ async function maybeAiExpand(topicTitle){
 }
 
 function fallbackBody(cat){
-  const intro = '> Practical, step‑by‑step guidance. Short, neutral, no hype.';
+  const intro = '> Practical, beginner‑friendly guide with safe defaults and clear steps.';
   const steps = [
-    'Define your goal; set constraints (budget, time, risk tolerance).',
-    'Prepare the right tools; enable 2FA; keep software updated.',
-    'Start small; verify results; scale gradually.',
-    'Document what you do; keep a simple log to repeat success.'
+    'Define your goal and constraints (budget, timeline, risk tolerance).',
+    'Prepare the right tools; enable 2FA everywhere; update firmware/software.',
+    'Start with a tiny amount to validate the flow and fees.',
+    'Execute in small batches; verify each result before scaling up.',
+    'Record tx hashes and decisions so you can audit and repeat later.',
+    'Back up critical data (seed phrase, export CSV/API keys) securely.',
+    'Review permissions/allowances; remove anything you no longer need.',
+    'Schedule a monthly security/tax hygiene check.'
   ];
-  const dos = [
-    'Use unique passwords and a password manager',
-    'Keep seed phrases offline; never photograph them',
-    'Verify URLs, extensions and contract addresses',
-    'Avoid public Wi‑Fi when handling funds'
+  const pros = [
+    'Clear, safety‑first workflow',
+    'Works with reputable tools',
+    'Easy to repeat and audit'
+  ];
+  const cons = [
+    'Takes discipline and time',
+    'Some tools may have fees/hardware cost'
+  ];
+  const faqs = [
+    ['Do I need a hardware wallet?', 'For long‑term holdings, hardware wallets reduce key‑theft risk significantly.'],
+    ['What about slippage on DEXs?', 'Use sensible limits and test with small trades; avoid volatile moments.'],
+    ['How do I track taxes?', 'Consolidate trades and on‑chain activity in a tool like Koinly and export a report.'],
+    ['Is public Wi‑Fi safe?', 'Avoid it for any sensitive crypto action; prefer a trusted network and VPN.']
   ];
   return [
     intro,
     '',
-    '## What you will learn',
-    '- How to approach this safely and efficiently',
-    '- Common pitfalls and how to avoid them',
-    '- Which tools speed things up',
+    '## Key takeaways',
+    '- Start small, verify, then scale',
+    '- Keep backups and software current',
+    '- Prefer reputable tooling with audits and a track record',
     '',
     '## Step‑by‑step',
     steps.map((s,i)=>`${i+1}. ${s}`).join('\n'),
     '',
-    '## Do’s and don’ts',
-    dos.map(d=>`- ${d}`).join('\n'),
+    '## Pros',
+    pros.map(p=>`- ${p}`).join('\n'),
+    '',
+    '## Cons',
+    cons.map(c=>`- ${c}`).join('\n'),
+    '',
+    '## FAQs',
+    faqs.map(([q,a])=>`- **${q}** — ${a}`).join('\n')
   ].join('\n');
 }
 
@@ -142,6 +161,16 @@ ${bodyContent}
 
 ${recommendedTools()}
 
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Do I need a hardware wallet?", "acceptedAnswer": {"@type": "Answer", "text": "For long-term holdings, a hardware wallet reduces risk."}},
+    {"@type": "Question", "name": "What about slippage?", "acceptedAnswer": {"@type": "Answer", "text": "Use sensible limits and test with small trades."}},
+    {"@type": "Question", "name": "How to track taxes?", "acceptedAnswer": {"@type": "Answer", "text": "Consolidate trades in a tool like Koinly and export a report."}}
+  ]
+}</script>
+
 {% include post-cta.html %}
 
 {% include adsense-bottom.html %}
@@ -151,7 +180,7 @@ ${recommendedTools()}
 [Home]({{ site.baseurl }}/) · [RSS]({{ site.baseurl }}/feed.xml) · [Disclosure]({{ site.baseurl }}/disclosure) · [Privacy]({{ site.baseurl }}/privacy)
 `;
 
-  const outPath = path.join(outDir, filename);
+const outPath = path.join(outDir, filename);
   fs.writeFileSync(outPath, md);
   console.log('Written', outPath, useAi ? '(AI)' : '(fallback)');
 }
