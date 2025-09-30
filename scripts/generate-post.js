@@ -172,6 +172,7 @@ ${recommendedTools()}
 }</script>
 
 {% include post-cta.html %}
+{% include related.html %}
 
 {% include adsense-bottom.html %}
 

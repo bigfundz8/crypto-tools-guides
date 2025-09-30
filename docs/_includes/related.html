@@ -1,0 +1,20 @@
+{% assign all = site.pages | where_exp: "p", "p.path contains 'posts/'" %}
+{% assign samecat = all | where: 'category', page.category %}
+{% assign related = samecat | sort: 'date' | reverse %}
+{% assign shown = 0 %}
+{% if related.size > 1 %}
+<h2>Related posts</h2>
+<div class="grid">
+{% for r in related %}
+  {% if r.url != page.url and shown < 3 %}
+    <div class="card">
+      <h3><a href="{{ r.url }}">{{ r.title }}</a></h3>
+      <div class="meta">{{ r.date | date: "%Y-%m-%d" }}<span class="badge">{{ r.category | default: 'Guide' }}</span></div>
+      {% if r.summary %}<p class="meta">{{ r.summary }}</p>{% endif %}
+    </div>
+    {% assign shown = shown | plus: 1 %}
+  {% endif %}
+{% endfor %}
+</div>
+{% endif %}
+
